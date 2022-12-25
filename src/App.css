@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.TASKS{
+  position: absolute;
+  top: 10%;
+  left: 40%;
 }
+.TASKS h1{
+  color: black;
+  margin-bottom: 30px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.TASKS input{
+  margin-left: -90px;
+  border: none;
+  outline: none;
+  /* height: 55px; */
+  font-size: 20px;
+  border-bottom: 2px solid blue;
+  padding: 5px;
+  width: 400px;
+  /* background: #000; */
 }
-
-.App-link {
-  color: #61dafb;
+.TASKS button{
+  border: 1px solid rgb(231, 225, 225);
+  background: rgb(147, 189, 147);
+  padding: 12px;
+  margin: 20px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: .3s ease;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TASKS button:hover{
+  background: rgb(152, 230, 152);
+}
+.TASKDETALS{
+  position: absolute;
+  top: 40%;
+  left: 33%;
+  /* background: #000; */
+  width: 400px;
+}
+.TASKDETALS h1{
+  color: #000;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.TASKDETALS button{
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid rgb(231, 225, 225);
+  padding: 5px;
+  margin-left: -3px;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  background: rgb(214, 53, 53);
+  transition: .3s ease;
+}
+.TASKDETALS button:hover{
+  background: rgb(241, 57, 57);
 }
